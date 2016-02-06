@@ -81,7 +81,7 @@ function labelthumbs(json) {
        
        var towrite = '';
        var flag = 0;
-       document.write('<br>');
+       //document.write('<br>');
        
        if (showpostdate == true) {
 	    towrite = towrite + monthnames[parseInt(cdmonth, 10)] + '-' + cdday + ' - ' + cdyear;
