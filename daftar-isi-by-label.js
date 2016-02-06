@@ -5,7 +5,7 @@ function labelthumbs(json) {
 	var posttitle = entry.title.$t;
 	var posturl;
 	if (i == json.feed.entry.length) break;
-	for (var k = 0; k < entry.link.length; k++) {
+	for (var k = entry.link.length; k > 0; k--) {
 	    if (entry.link[k].rel == 'replies' && entry.link[k].type == 'text/html') {
 		var commenttext = entry.link[k].title;
 		var commenturl = entry.link[k].href;
