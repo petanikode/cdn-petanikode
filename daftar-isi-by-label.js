@@ -1,11 +1,11 @@
 function labelthumbs(json) {
     document.write('<ol id="label_with_thumbs">');
-    for (var i = 0; i < numposts; i++) {
+    for (var i = numposts; i > 0; i--) {
 	var entry = json.feed.entry[i];
 	var posttitle = entry.title.$t;
 	var posturl;
 	if (i == json.feed.entry.length) break;
-	for (var k = entry.link.length; k > 0; k--) {
+	for (var k = 0; k < entry.link.length; k++) {
 	    if (entry.link[k].rel == 'replies' && entry.link[k].type == 'text/html') {
 		var commenttext = entry.link[k].title;
 		var commenturl = entry.link[k].href;
@@ -81,7 +81,6 @@ function labelthumbs(json) {
        
        var towrite = '';
        var flag = 0;
-       //document.write('<br>');
        
        if (showpostdate == true) {
 	    towrite = towrite + monthnames[parseInt(cdmonth, 10)] + '-' + cdday + ' - ' + cdyear;
