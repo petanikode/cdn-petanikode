@@ -1,6 +1,6 @@
 function labelthumbs(json) {
     document.write('<ol id="label_with_thumbs">');
-    for (var i = numposts; i > 0; i--) {
+    for (var i = 0; i < numposts; i++) {
 	var entry = json.feed.entry[i];
 	var posttitle = entry.title.$t;
 	var posturl;
