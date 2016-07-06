@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg4224" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="128" width="128" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 128 128">
+ <metadata id="metadata4229">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(0 -924.36)">
+  <g id="g4408" transform="matrix(1.2442 0 0 1.2442 -191.73 90.434)">
+   <rect id="rect4410" rx="47.185" ry="47.185" height="94.369" width="94.369" stroke="#fff" y="674.52" x="158.36" stroke-width="8" fill="#008080"/>
+   <g id="g4412" fill-rule="evenodd" transform="matrix(.28558 0 0 .28558 -56.691 638)" fill="#fff">
+    <path id="path4414" d="m964.13 193.3-163.42 47.92 235.09 108.5z"/>
+    <path id="path4416" d="m860.36 278 0.84226 29.734 1.1339 40.03 15.658-2.8122 15.797 45.261 88.778-54.291z"/>
+   </g>
+  </g>
+ </g>
+</svg>
