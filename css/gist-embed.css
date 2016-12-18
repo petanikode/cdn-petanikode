@@ -15,11 +15,7 @@
 }
 
 .gist pre {
-    font-family: Menlo, Monaco, &#39;
-    Bitstream Vera Sans Mono&#39;
-    , &#39;
-    Courier New&#39;
-    , monospace !important
+    font-family: Menlo, Monaco, 'Bitstream Vera Sans Mono', Consolas, 'Courier New', monospace !important;
 }
 
 .gist-meta {
