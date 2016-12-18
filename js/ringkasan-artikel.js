@@ -22,7 +22,7 @@ summary_img = 100;
 //     while (strx.charAt(chop - 1) != ' ' && strx.indexOf(' ', chop) != -1) chop++;
 //     strx = strx.substring(0, chop - 1);
 //     return strx + ' ';
-}
+// }
 
 /**
  * Buat ringkasan artikel berserta thumbnail-nya untuk ditampilkan di halaman untam
