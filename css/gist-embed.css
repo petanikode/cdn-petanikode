@@ -1,0 +1,38 @@
+/* CSS untuk embed Gist */
+.gist {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    width: 100% !important
+}
+
+.gist .blob-code-inner, .gist .blob-num {
+    font-size: 15px !important
+}
+
+.gist-file .gist-data {
+    max-height: 500px
+}
+
+.gist pre {
+    font-family: Menlo, Monaco, &#39;
+    Bitstream Vera Sans Mono&#39;
+    , &#39;
+    Courier New&#39;
+    , monospace !important
+}
+
+.gist-meta {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px !important
+}
+
+.gist-meta a {
+    color: #239ea3 !important;
+    text-decoration: none
+}
+
+.gist-meta a:hover {
+    color: #5cc2c0 !important
+}
+/* End CSS untuk embed Gist */
