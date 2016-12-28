@@ -25,7 +25,7 @@ summary_img = 100;
 // }
 
 /**
- * Buat ringkasan artikel berserta thumbnail-nya untuk ditampilkan di halaman untam
+ * Buat ringkasan artikel berserta thumbnail-nya untuk ditampilkan di halaman utama
  * @param  {int} pID    id artikel/post
  * @param  {string} judul  judul artikel
  * @param  {string} alamat alamat/link artikel
