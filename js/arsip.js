@@ -40,11 +40,10 @@ function DisplaytheTOC(PostTitles, PostURLs, PostYears, PostMonths, PostDays) {
             currentYear = PostYears[EntryNum];
             document.write("</ul>");
 
-            document.write("<h4 class='dateStyle'>" + currentMonth + "
-                " + currentYear + " < /h4>");
-                document.write("<ul class='list-artikel'>");
-            }
-
-            document.write('<li><a href = "' + PostURLs[EntryNum] + '" ><div class="dayStyle" ' + parseInt(PostDays[EntryNum], 10) + "</div>" + PostTitles[EntryNum] + " < /a></li >");
+            document.write("<h4 class='dateStyle'>" + currentMonth + " " + currentYear + " < /h4>");
+            document.write("<ul class='list-artikel'>");
         }
+
+        document.write('<li><a href = "' + PostURLs[EntryNum] + '" ><div class="dayStyle" ' + parseInt(PostDays[EntryNum], 10) + "</div>" + PostTitles[EntryNum] + " < /a></li >");
     }
+}
