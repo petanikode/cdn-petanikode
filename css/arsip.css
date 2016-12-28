@@ -9,7 +9,7 @@ ul.list-artikel{
     margin-left: 16px;
     list-style:none;
 }
-ul.list-artikel li:before {
+ul.list-artikel li .dayStyle:after {
     content:  "\f073";
     font-family: FontAwesome;
     display: inline-block;
@@ -21,6 +21,4 @@ ul.list-artikel li:before {
     color: #000;
     font-family: 'Merriweather','Georgia',Serif;
     display: inline-block;
-    margin: 0 0 0 -46px;
-    position: absolute;
 }
