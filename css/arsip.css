@@ -9,7 +9,7 @@ ul.list-artikel{
     margin-left: 16px;
     list-style:none;
 }
-ul.list-artikel li .dayStyle:after {
+ul.list-artikel li:before {
     content:  "\f073";
     font-family: FontAwesome;
     display: inline-block;
