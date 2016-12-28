@@ -19,6 +19,6 @@ ul.list-artikel li:before {
 
 .dayStyle {
     color: #000;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Merriweather','Georgia',Serif;
     display: inline-block;
 }
