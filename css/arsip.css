@@ -21,4 +21,6 @@ ul.list-artikel li:before {
     color: #000;
     font-family: 'Merriweather','Georgia',Serif;
     display: inline-block;
+    margin: 0 0 0 -46px;
+    position: absolute;
 }
