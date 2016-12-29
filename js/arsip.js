@@ -44,6 +44,6 @@ function DisplaytheTOC(PostTitles, PostURLs, PostYears, PostMonths, PostDays) {
             document.write("<ul class='list-artikel'>");
         }
 
-        document.write('<li><a href = "' + PostURLs[EntryNum] + '" ><div class="dayStyle">' + parseInt(PostDays[EntryNum], 10) + ": </div>" + PostTitles[EntryNum] + " </a></li>");
+        document.write('<li><a href = "' + PostURLs[EntryNum] + '" ><div class="dayStyle">' + parseInt(PostDays[EntryNum], 10) + ":&nbsp;</div>" + PostTitles[EntryNum] + " </a></li>");
     }
 }
