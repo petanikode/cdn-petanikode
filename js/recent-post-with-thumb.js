@@ -108,7 +108,7 @@ function changeThumbSize(id, size) {
     var replacement = blogGadget.innerHTML;
     blogGadget.innerHTML = replacement.replace(/s72-c/g, 's'+ size + '-c');
     var thumbnails = blogGadget.getElementsByTagName('img');
-    for (var i = 0; i & lt; thumbnails.length; i++) {
+    for (var i = 0; i < thumbnails.length; i++) {
         thumbnails[i].width = size;
         thumbnails[i].height = size;
     }
