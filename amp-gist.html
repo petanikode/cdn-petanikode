@@ -10,7 +10,17 @@ body {
   margin:0;
   padding:0;
 }
-iframe{border:0}
+iframe{
+    border:0;
+    width: 100%;
+}
+
+.gist{font-size:13px;line-height:18px;margin-bottom:20px;width:100%}
+.gist-file .gist-data {max-height: 500px}
+.gist pre {font-family:Menlo,Monaco,'Bitstream Vera Sans Mono','Courier New',monospace !important}
+.gist-meta {font-family:Helvetica,Arial,sans-serif;font-size:13px !important}
+.gist-meta a{color:#239ea3 !important;text-decoration:none}
+.gist-meta a:hover{color:#5cc2c0 !important}
 </style>
 
 <script>
@@ -24,6 +34,10 @@ function getQueryVariable(variable) {
 	return(false);
 }
 
+function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+ }
+
 </script>
 </head>
 <body>
@@ -35,6 +49,7 @@ function getQueryVariable(variable) {
     var iframe = document.createElement('iframe');
 
     iframe.src = "data:text/html;charset=utf-8,%3Cbody%3E%3Cscript%20src%3D%22"+gistURL+"%22%3E%3C%2Fscript%3E%3C%2Fbody%3E";
+    iframe.onload = resizeIframe(this);
     document.getElementsByTagName('body')[0].appendChild(iframe);
     </script>
 
