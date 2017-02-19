@@ -23,20 +23,21 @@ function getQueryVariable(variable) {
 	}
 	return(false);
 }
-var gistURL = getQueryVariable("url") + ".js";
 
-// bikin element script untuk load gist
-var script = document.createElement('script');
-script.onload = function() {
-  alert("Script loaded and ready");
-};
-
-script.src = gistURL;
-document.getElementsByTagName('body')[0].appendChild(script);
 
 </script>
 </head>
 <body>
+
+    <script>
+    var gistURL = getQueryVariable("url") + ".js";
+
+    // bikin element script untuk load gist
+    var script = document.createElement('script');
+
+    script.src = gistURL;
+    document.getElementsByTagName('body')[0].appendChild(script);
+    </script>
 
 </body>
 </html>
