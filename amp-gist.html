@@ -43,10 +43,12 @@ function getQueryVariable(variable) {
 
     <script>
     var gistURL = encodeURIComponent( getQueryVariable("url") + ".js" );
+    var style = encodeURIComponent("<stle>.gist .blob-code-inner { font-size: 15px !important; }</style>");
+    var body = encodeURIComponent( "<body><script src='"+gistURL+"'></script>"+style+"</body>" );
 
     // bikin element script untuk load gist
     var iframe = document.createElement('iframe');
-    iframe.src = "data:text/html;charset=utf-8,%3Cbody%3E%3Cscript%20src%3D%22"+gistURL+"%22%3E%3C%2Fscript%3E%3C%2Fbody%3E";
+    iframe.src = "data:text/html;charset=utf-8," + body;
     document.getElementsByTagName('body')[0].appendChild(iframe);
     </script>
 
