@@ -34,14 +34,15 @@ function getQueryVariable(variable) {
 <body>
 
     <script>
-    var gistURL = getQueryVariable("url") + ".js" ;
-    var style = "<style>.gist .blob-code-inner { font-size: 15px !important; }</style>";
-    var body = encodeURIComponent( "<head>"+style+"</head><body><script src='"+ gistURL +"'/>" );
+
+    var style = encodeURIComponent( "<head><style>.gist .blob-code-inner { font-size: 15px !important; }</style></head>" );
+    var gistURL = encodeURIComponent( getQueryVariable("url") + ".js" );
 
     // bikin element script untuk load gist
     var iframe = document.createElement('iframe');
-    iframe.src = "data:text/html;charset=utf-8," + body;
+    iframe.src = "data:text/html;charset=utf-8,"+style+"%3Cbody%3E%3Cscript%20src%3D%22"+gistURL+"%22%3E%3C%2Fscript%3E%3C%2Fbody%3E";
     document.getElementsByTagName('body')[0].appendChild(iframe);
+
     </script>
 
 </body>
