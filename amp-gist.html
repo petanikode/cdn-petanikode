@@ -29,14 +29,7 @@ function getQueryVariable(variable) {
 </head>
 <body>
 
-    <script>
-    var gistURL = getQueryVariable("url") + ".js";
-
-    // bikin element script untuk load gist
-    var script = document.createElement('script');
-
-    script.src = gistURL;
-    document.getElementsByTagName('body')[0].appendChild(script);
+    <script src="javascript: getQueryVariable('url') + '.js'">
     </script>
 
 </body>
