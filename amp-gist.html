@@ -36,7 +36,7 @@ function getQueryVariable(variable) {
     <script>
     var gistURL = getQueryVariable("url") + ".js" ;
     var style = "<style>.gist .blob-code-inner { font-size: 15px !important; }</style>";
-    var body = encodeURIComponent( "<head>"+style+"</head><body><script src='"+ gistURL +"'/></body>" );
+    var body = encodeURIComponent( "<head>"+style+"</head><body><script src='"+ gistURL +"'/>" );
 
     // bikin element script untuk load gist
     var iframe = document.createElement('iframe');
